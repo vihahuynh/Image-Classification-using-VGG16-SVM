@@ -30,6 +30,3 @@ if __name__ == '__main__':
     clf = svm.SVC(kernel = 'linear')
     clf.fit(datas, labels) 
     print("Train finished")
-    save_path = "/content/svm_cats_and_dogs/model/svm.joblib"
-    print("Save model to file : ", save_path)
-    joblib.dump(clf, save_path)

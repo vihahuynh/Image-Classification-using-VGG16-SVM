@@ -24,7 +24,7 @@ def read_data(src):
     return datas, labels
 
 if __name__ == '__main__':
-    src = 'features/vgg16_fc2/train'
+    src = '/content/svm_cats_and_dogs/features/vgg16_fc2/train'
     datas, labels = read_data(src)
     print("[!] Training...")
     clf = svm.SVC(gamma='scale')

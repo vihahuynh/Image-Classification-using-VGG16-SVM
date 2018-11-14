@@ -26,10 +26,10 @@ def read_data(src):
 if __name__ == '__main__':
     src = '/content/svm_cats_and_dogs/features/vgg16_fc2/train'
     datas, labels = read_data(src)
-    print("[!] Training...")
+    print("Training...")
     clf = svm.SVC(gamma='scale')
     clf.fit(datas, labels) 
-    print("[+] Train finished")
+    print("Train finished")
     save_path = "model/svm.joblib"
-    print("[+] Save model to file : ", save_path)
+    print("Save model to file : ", save_path)
     joblib.dump(clf, save_path)

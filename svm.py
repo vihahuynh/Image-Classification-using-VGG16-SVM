@@ -27,7 +27,7 @@ if __name__ == '__main__':
     src = '/content/svm_cats_and_dogs/features/vgg16_fc2/train'
     datas, labels = read_data(src)
     print("Training...")
-    clf = svm.SVC(gamma='scale')
+    clf = svm.SVC(kernel = 'linear')
     clf.fit(datas, labels) 
     print("Train finished")
     save_path = "model/svm.joblib"

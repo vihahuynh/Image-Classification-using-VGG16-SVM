@@ -21,6 +21,8 @@ def read_data(src):
         print("[+] Load file : ", temp , " with label : ",label, " shape : ", data.shape, " data : ", data)
         datas.append(data[0])
         labels.append(label)
+        print(datas)
+        print(labels)
     return datas, labels
 
 if __name__ == '__main__':
